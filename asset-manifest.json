@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/my-project-university/static/css/main.7acaea2f.css",
+    "main.js": "/my-project-university/static/js/main.07d3183d.js",
+    "index.html": "/my-project-university/index.html",
+    "main.7acaea2f.css.map": "/my-project-university/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/my-project-university/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
