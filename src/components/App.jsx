@@ -1,16 +1,24 @@
+import { Container } from './App.styled';
+import React, { useEffect, useState } from 'react';
+import { FormComponent } from './FormComponent/FormComponent';
+
+// import axios from 'axios';
+
 export const App = () => {
+  const [apiData, setApiData] = useState(null);
+
+  useEffect(() => {
+    fetch('https://64a0a5cded3c41bdd7a76781.mockapi.io/university')
+      .then(response => response.json())
+      .then(data => {
+        setApiData(data);
+      });
+  }, []);
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Container>
+      <h1>Hello</h1>
+      <FormComponent apiData={apiData}></FormComponent>
+    </Container>
   );
 };

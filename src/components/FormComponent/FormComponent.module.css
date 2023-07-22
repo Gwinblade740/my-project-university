@@ -1,0 +1,9 @@
+.formDay_container {
+  display: flex;
+}
+.formDay_label:last-child {
+  margin-left: 20px;
+}
+.formDay_input {
+    margin-left: 5px;
+  }
