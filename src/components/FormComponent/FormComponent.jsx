@@ -1,7 +1,7 @@
 import { Wrapper, Heading, Input, Button, Label } from './FormComponent.styled';
 import { useState } from 'react';
 import css from './FormComponent.module.css';
-import { type } from '@testing-library/user-event/dist/type';
+// import { type } from '@testing-library/user-event/dist/type';
 export const FormComponent = apiData => {
   const [dayForm, setDayForm] = useState(null);
   const [subjects, setSubjects] = useState([]);
@@ -21,7 +21,7 @@ export const FormComponent = apiData => {
   // };
   console.log(specialities);
   const handleChange = evt => {
-    const { name, value, type, checked } = evt.target;
+    const { value, type, checked } = evt.target;
     if (type === 'radio') {
       setDayForm(value);
     }
